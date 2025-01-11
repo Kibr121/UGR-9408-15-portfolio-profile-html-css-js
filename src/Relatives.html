@@ -4,6 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Family & Relatives | My Personal Website</title>
+    <link rel="stylesheet" href="/UGR-9408-15-portfolio-profile-html-css-js/src/css/relatives.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        header {
+            width: 100%;
+            background-color: #4CAF50;
+            padding: 1em;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .relative-card {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .relative-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .relative-card h3 {
+            margin: 0;
+            color: #4CAF50;
+        }
+        .relative-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer .quick-links {
+            margin-bottom: 10px;
+        }
+        footer .quick-links a {
+            margin: 0 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer .social-icons a {
+            margin: 0 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4CAF50;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+            }
+            nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -12,68 +108,60 @@
 </header>
 
 <nav>
-    <a href="home.html">Home</a>
-    <a href="education.html">Education</a>
-    <a href="cv.html">CV</a>
-    <a href="relatives.html">Relatives</a>
-    <a href="future-plan.html">Future Plan</a>
-    <a href="hobbies.html">Hobbies</a>
-    <a href="contact.html">Contact</a>
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/index.html">Home</a> |
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Education.html">Education</a> |
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/CV.html">CV</a> |
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Relatives.html">Relatives</a> |
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Future-Plan.html">Future Plan</a> |
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Hobbies.html">Hobbies</a> |
+    <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Contact.html">Contact</a>
 </nav>
 
-<div class="content">
-    
+<div class="grid-container">
     <div class="relative-card">
-        <h3>Name: Lemma Lessa</h3>
-        <p><strong>Relationship:</strong>Father</p>
-        <p><strong>Note:</strong>Teacher</p>
-        <img src="/src/image/father.jpg" alt="Father">
+        <img src="/UGR-9408-15-portfolio-profile-html-css-js/src/image/father.jpg" alt="Relative 1">
+        <div class="description">
+            <h3>Lemma Lessa</h3>
+            <p>Relationship: Father  Note: Teacher</p>
+        </div>
     </div>
-
     <div class="relative-card">
-        <h3>Name: Serkalem Assefa</h3>
-        <p><strong>Relationship:</strong>Mother</p>
-        <p><strong>Note:</strong>Accountant</p>
-        <img src="/src/image/mother.jpg" alt="Mother">
+        <img src="/UGR-9408-15-portfolio-profile-html-css-js/src/image/mother.jpg" alt="Relative 2">
+        <div class="description">
+            <h3>Serkalem Assefa</h3>
+            <p>Relationship: Mother  Note: Accountant</p>
+        </div>
     </div>
-
     <div class="relative-card">
-        <h3>Name:Dagmawi Lemma</h3>
-        <p><strong>Relationship:</strong>Sibling</p>
-        <p><strong>Note:</strong>Student</p>
-        <img src="/src/image/brother1.jpg" alt="Brother 1">
+        <img src="/UGR-9408-15-portfolio-profile-html-css-js/src/image/brother1.jpg" alt="Relative 3">
+        <div class="description">
+            <h3>Dagmawi Lemma</h3>
+            <p>Relationship: Sibling  Note: Student</p>
+        </div>
     </div>
-
     <div class="relative-card">
-        <h3>Name:Ananya Lemma</h3>
-        <p><strong>Relationship:</strong>Sibling</p>
-        <p><strong>Note:</strong>Student</p>
-        <img src="/src/image/brother2.jpg" alt="Brother">
+        <img src="/UGR-9408-15-portfolio-profile-html-css-js/src/image/brother2.jpg" alt="Relative 4">
+        <div class="description">
+            <h3>Ananya Lemma</h3>
+            <p>Relationship: Sibling  Note: Student</p>
+        </div>
     </div>
-
-    <div class="relative-card">
-        <h3>Name:Mebatsion Lemma</h3>
-        <p><strong>Relationship:</strong>Sibling</p>
-        <p><strong>Note:</strong> Student</p>
-        <img src="/src/image/sister.jpg" alt="Sister">
-    </div>
-    
 </div>
 
 <footer>
     <div class="quick-links">
-        <a href="home.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="cv.html">CV</a>
-        <a href="relatives.html">Relatives</a>
-        <a href="future-plan.html">Future Plan</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="contact.html">Contact</a>
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/index.html">Home</a> 
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Education.html">Education</a> 
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/CV.html">CV</a> 
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Relatives.html">Relatives</a> 
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Future-Plan.html">Future Plan</a> 
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Hobbies.html">Hobbies</a> 
+        <a href="/UGR-9408-15-portfolio-profile-html-css-js/src/Contact.html">Contact</a>
     </div>
     <div class="social-icons">
-        <a href="https://x.com/KibruyisfaLemma" target="_blank">X</a>
-        <a href="https://www.linkedin.com/in/kibruyisfa-lemma-73658221b/" target="_blank">linkedin</a>
-        <a href="https://www.instagram.com/kibrlemma" target="_blank">Instagram</a>
+        <a href="https://x.com/KibruyisfaLemma" target="_blank" style="text-decoration: none; font-size: 24px; font-weight: bold; color: black;">X</a>
+        <a href="https://www.linkedin.com/in/kibruyisfa-lemma-73658221b/" target="_blank" style="text-decoration: none; font-size: 24px; font-weight: bold; color: #0A66C2;">in</a>
+        <a href="https://www.instagram.com/kibrlemma" target="_blank" style="text-decoration: none; font-size: 24px; font-weight: bold; color: #E1306C;">📸</a>
     </div>
     <p>&copy; 2024 My Personal Website</p>
 </footer>
