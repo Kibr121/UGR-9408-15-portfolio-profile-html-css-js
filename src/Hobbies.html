@@ -36,31 +36,50 @@
             color: #4CAF50;
         }
         .content {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .hobby-card {
-            width: 100%;
-            max-width: 250px;
-            text-align: center;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fafafa;
-        }
-        .hobby-card img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hobby-card {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    max-width: 300px;
+}
+
+.hobby-card video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.hobby-card audio {
+    width: 100%;
+    height: 12%;
+    margin-bottom: 10px;
+    border: 1px solid rgb(18, 18, 18);
+    border-radius: 15px;
+}
+
+
+.hobby-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
         .hobby-card h3 {
             margin: 10px 0 5px;
             color: #4CAF50;
@@ -91,16 +110,15 @@
             font-size: 20px;
             color: #4CAF50;
         }
-        @media (max-width: 600px) {
-            .content {
-                padding: 15px;
-                flex-direction: column;
-                align-items: center;
-            }
-            nav a {
-                margin: 0 5px;
-            }
-        }
+        @media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobby-card {
+        max-width: 100%;
+    }
+}
     </style>
 </head>
 <body>
@@ -128,15 +146,15 @@
     </div>
     <!-- Hobby Card 2 -->
     <div class="hobby-card">
-        <video src="/UGR-9408-15-portfolio-profile-html-css-js/src/video/Helmet.mp4"></video>
+        <video controls src="/UGR-9408-15-portfolio-profile-html-css-js/src/video/Helmet.mp4"></video>
         <h3>MotorBike</h3>
         <p>Ride Bike and keeping active to maintain a healthy lifestyle.</p>
     </div>
     <!-- Hobby Card 3 -->
     <div class="hobby-card">
-        <audio src="/UGR-9408-15-portfolio-profile-html-css-js/src/audio/eglair.mp3"></audio>
         <h3>Music</h3>
         <p>Listening to and creating music as a form of self-expression and relaxation.</p>
+        <audio controls src="/UGR-9408-15-portfolio-profile-html-css-js/src/audio/eglair.mp3" type="audio/mpeg"></audio>></audio>
     </div>
     <!-- Additional Hobby Cards can be added as needed -->
 </div>
